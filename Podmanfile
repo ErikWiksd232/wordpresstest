@@ -5,5 +5,5 @@ LABEL maintainer="erikwikstrom85@gmail.com"
 # Example: COPY custom-plugin /var/www/html/wp-content/plugins/
 
 # Expose the HTTP port
-EXPOSE 80
+EXPOSE 8080
 
