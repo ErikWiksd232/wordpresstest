@@ -20,7 +20,7 @@ RUN yum install -y \
     && yum clean all
 
 
-# Nerladdning, uppackning och installation av WordPress
+# dwnl, unpack & inst WordPress
 RUN wget https://wordpress.org/latest.zip -O /tmp/wordpress.zip && unzip /tmp/wordpress.zip -d /var/www/html && rm /tmp/wordpress.zip
 
 # Rights for WordPress
@@ -36,9 +36,9 @@ RUN sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf
 
 
 
-# öppnar port 8080 i poden
+# port exp 8080  pod
 EXPOSE 8080
 
-# Startar php med port 8080 från /wordpress
+# Start php w port 8080 from /wordpress
 CMD ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html/wordpress/"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
