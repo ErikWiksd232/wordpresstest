@@ -1,9 +1,0 @@
-FROM wordpress:latest
-LABEL maintainer="erikwikstrom85@gmail.com"
-
-# Add custom configurations, themes, or plugins if needed
-# Example: COPY custom-plugin /var/www/html/wp-content/plugins/
-
-# Expose the HTTP port
-EXPOSE 8080
-
