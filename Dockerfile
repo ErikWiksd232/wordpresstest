@@ -42,4 +42,4 @@ EXPOSE 8080
 # Start php w port 8080 from /wordpress
 CMD ["php", "-S", "0.0.0.0:8080", "-t", "/var/www/html/wordpress/"]
 #CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-RUN touch bobr.kurwa
+RUN touch bobr
