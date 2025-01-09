@@ -26,8 +26,6 @@ RUN wget https://wordpress.org/latest.zip -O /tmp/wordpress.zip && unzip /tmp/wo
 # Rights for WordPress
 RUN chown -R apache:apache /var/www/html \
     && chmod -R 775 /var/www/html \
-    && chown -R apache:apache /var/www/html/wordpress \
-    && chmod -R 775 /var/www/html/wordpress
 
 # Cat for wordpress
 WORKDIR /var/www/html/wordpress/
